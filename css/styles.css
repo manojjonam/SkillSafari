@@ -1829,13 +1829,13 @@ a:hover.back-to-top {
 
   .navbar-custom .nav-item .nav-link {
     padding: 0.25rem 0.75rem 0.25rem 0.75rem;
-    color: #fff;
+    color: #222222;
     opacity: 0.8;
   }
 
   .navbar-custom .nav-item .nav-link:hover,
   .navbar-custom .nav-item .nav-link.active {
-    color: #fff;
+    color: #0175bb;
     opacity: 1;
   }
 
@@ -1852,7 +1852,7 @@ a:hover.back-to-top {
 
   .navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
   .navbar-custom.top-nav-collapse .nav-item .nav-link.active {
-    color: #00bfd8;
+    color: #0175bb;
   }
 
   .navbar-custom .dropdown-menu {
@@ -2076,8 +2076,8 @@ a:hover.back-to-top {
 
   /* Extra Pages */
   .ex-header {
-    background: url('../images/ex-header-background.jpg') center center no-repeat;
-    background-size: cover;
+    /* background: url('../images/ex-header-background.jpg') center center no-repeat;
+    background-size: cover; */
   }
 
   .ex-header h1 {
