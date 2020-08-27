@@ -6771,9 +6771,7 @@ a.close.disabled {
 
 .carousel-item img {
   width: 100%;
-  height: 650px;
-  filter: grayscale(100%);
-  
+  height: 650px;  
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -38,6 +38,19 @@ body {
   border: 1px solid;
 }
 
+.featureBox1 {
+  width: 8rem;
+  height: 8rem;
+  margin: 1rem;
+  /* border: 1px solid; */
+}
+
+.fearureSpan{
+  font-weight: 800;
+  margin: 5px;
+  font-size: 1.5rem;
+}
+
 /* Testimonial*/
 .social-icons-slicker {
   margin: 0.5rem 0rem 0rem 5rem;
@@ -90,7 +103,7 @@ body {
   background-size: cover;
   background: linear-gradient(90deg, rgba(252, 252, 252, 1) 16%, rgba(255, 255, 255, 1) 29%);
 } */
-.listGroup{
+.listGroup {
   list-style: none;
   padding: 0;
   margin: 0;
