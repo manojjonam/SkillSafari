@@ -1821,6 +1821,7 @@ a:hover.back-to-top {
     padding: 2.125rem 1.5rem 2.125rem 2rem;
     box-shadow: none;
     background: transparent;
+    
   }
 
   .navbar-custom .navbar-nav {
@@ -1830,8 +1831,9 @@ a:hover.back-to-top {
 
   .navbar-custom .nav-item .nav-link {
     padding: 0.25rem 0.75rem 0.25rem 0.75rem;
-    color: #222222;
-    opacity: 0.8;
+    /* color: #222222; */
+    color: #ffffff;
+    /* opacity: 0.8; */
   }
 
   .navbar-custom .nav-item .nav-link:hover,
@@ -2106,7 +2108,7 @@ a:hover.back-to-top {
 
   /* Navigation */
   .navbar-custom {
-    padding: 2.125rem 5rem 2.125rem 5rem;
+    padding: 1.125rem 5rem 1.125rem 5rem;
   }
 
   .navbar-custom.top-nav-collapse {
@@ -2169,8 +2171,8 @@ a:hover.back-to-top {
 
   /* Details 1 */
   .basic-1 .text-container {
-    margin-top: 6.125rem;
-    margin-right: 4rem;
+    margin-top: 11.125rem;
+    /* margin-right: 4rem; */
     margin-left: 1rem;
   }
 
