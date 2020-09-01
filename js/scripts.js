@@ -9,16 +9,16 @@
     "use strict"; 
 	
 	/* Preloader */
-	$(window).on('load', function() {
-		var preloaderFadeOutTime = 500;
-		function hidePreloader() {
-			var preloader = $('.spinner-wrapper');
-			setTimeout(function() {
-				preloader.fadeOut(preloaderFadeOutTime);
-			}, 500);
-		}
-		hidePreloader();
-	});
+	// $(window).on('load', function() {
+	// 	var preloaderFadeOutTime = 500;
+	// 	function hidePreloader() {
+	// 		var preloader = $('.spinner-wrapper');
+	// 		setTimeout(function() {
+	// 			preloader.fadeOut(preloaderFadeOutTime);
+	// 		}, 500);
+	// 	}
+	// 	hidePreloader();
+	// });
 
 	
 	/* Navbar Scripts */
@@ -67,52 +67,6 @@
 
 
     
-
-    /* Video Lightbox - Magnific Popup */
-    $('.popup-youtube, .popup-vimeo').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: false,
-        iframe: {
-            patterns: {
-                youtube: {
-                    index: 'youtube.com/', 
-                    id: function(url) {        
-                        var m = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
-                        if ( !m || !m[1] ) return null;
-                        return m[1];
-                    },
-                    src: 'https://www.youtube.com/embed/%id%?autoplay=1'
-                },
-                vimeo: {
-                    index: 'vimeo.com/', 
-                    id: function(url) {        
-                        var m = url.match(/(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/);
-                        if ( !m || !m[5] ) return null;
-                        return m[5];
-                    },
-                    src: 'https://player.vimeo.com/video/%id%?autoplay=1'
-                }
-            }
-        }
-    });
-
-
-    /* Lightbox - Magnific Popup */
-	$('.popup-with-move-anim').magnificPopup({
-		type: 'inline',
-		fixedContentPos: false, /* keep it false to avoid html tag shift with margin-right: 17px */
-		fixedBgPos: true,
-		overflowY: 'auto',
-		closeBtnInside: true,
-		preloader: false,
-		midClick: true,
-		removalDelay: 300,
-		mainClass: 'my-mfp-slide-bottom'
-	});
     
     
     /* Move Form Fields Label When User Types */
@@ -127,17 +81,17 @@
 
 
     /* Request Form */
-    $("#requestForm").validator().on("submit", function(event) {
-    	if (event.isDefaultPrevented()) {
-            // handle the invalid form...
-            rformError();
-            rsubmitMSG(false, "Please fill all fields!");
-        } else {
-            // everything looks good!
-            event.preventDefault();
-            rsubmitForm();
-        }
-    });
+    // $("#requestForm").validator().on("submit", function(event) {
+    // 	if (event.isDefaultPrevented()) {
+    //         // handle the invalid form...
+    //         rformError();
+    //         rsubmitMSG(false, "Please fill all fields!");
+    //     } else {
+    //         // everything looks good!
+    //         event.preventDefault();
+    //         rsubmitForm();
+    //     }
+    // });
 
     function rsubmitForm() {
         // initiate variables with form content
@@ -185,17 +139,17 @@
     
 
     /* Contact Form */
-    $("#contactForm").validator().on("submit", function(event) {
-    	if (event.isDefaultPrevented()) {
-            // handle the invalid form...
-            cformError();
-            csubmitMSG(false, "Please fill all fields!");
-        } else {
-            // everything looks good!
-            event.preventDefault();
-            csubmitForm();
-        }
-    });
+    // $("#contactForm").validator().on("submit", function(event) {
+    // 	if (event.isDefaultPrevented()) {
+    //         // handle the invalid form...
+    //         cformError();
+    //         csubmitMSG(false, "Please fill all fields!");
+    //     } else {
+    //         // everything looks good!
+    //         event.preventDefault();
+    //         csubmitForm();
+    //     }
+    // });
 
     function csubmitForm() {
         // initiate variables with form content
@@ -242,17 +196,17 @@
 
 
     /* Privacy Form */
-    $("#privacyForm").validator().on("submit", function(event) {
-    	if (event.isDefaultPrevented()) {
-            // handle the invalid form...
-            pformError();
-            psubmitMSG(false, "Please fill all fields!");
-        } else {
-            // everything looks good!
-            event.preventDefault();
-            psubmitForm();
-        }
-    });
+    // $("#privacyForm").validator().on("submit", function(event) {
+    // 	if (event.isDefaultPrevented()) {
+    //         // handle the invalid form...
+    //         pformError();
+    //         psubmitMSG(false, "Please fill all fields!");
+    //     } else {
+    //         // everything looks good!
+    //         event.preventDefault();
+    //         psubmitForm();
+    //     }
+    // });
 
     function psubmitForm() {
         // initiate variables with form content
@@ -300,15 +254,15 @@
 
     /* Back To Top Button */
     // create the back to top button
-    $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
-    var amountScrolled = 700;
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > amountScrolled) {
-            $('a.back-to-top').fadeIn('500');
-        } else {
-            $('a.back-to-top').fadeOut('500');
-        }
-    });
+    // $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
+    // var amountScrolled = 700;
+    // $(window).scroll(function() {
+    //     if ($(window).scrollTop() > amountScrolled) {
+    //         $('a.back-to-top').fadeIn('500');
+    //     } else {
+    //         $('a.back-to-top').fadeOut('500');
+    //     }
+    // });
 
 
 	/* Removes Long Focus On Buttons */
